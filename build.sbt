@@ -21,6 +21,10 @@ Docs.settings
 
 ScalaDist.platformSettings
 
+// TODO: once we start smoke testing, we'll want to resolve against staging to
+// detect any issues before promoting to maven central -- we should look up the repo url using the sonatype rest api
+resolvers += "staging" at "https://oss.sonatype.org/content/repositories/orgscala-lang-1058/"
+
 // resolvers += "local" at "file:///e:/.m2/repository"
 // resolvers += Resolver.mavenLocal
 // to test, run e.g., stage, or windows:packageBin, show s3-upload::mappings
